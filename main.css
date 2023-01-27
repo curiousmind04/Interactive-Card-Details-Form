@@ -209,7 +209,7 @@ input::placeholder {
   .card-back {
     transform: scale(1);
     position: absolute;
-    top: 54%;
+    top: 52%;
     left: 54%;
     z-index: 2;
     background: transparent;
@@ -221,7 +221,7 @@ input::placeholder {
     color: hsl(270, 3%, 87%);
     font-size: 0.9rem;
     position: absolute;
-    top: 66.4%;
+    top: 64.4%;
     left: 128.5%;
     z-index: 3;
   }
@@ -230,14 +230,14 @@ input::placeholder {
     border-radius: 0.6rem;
     transform: scale(1);
     position: absolute;
-    top: 22.5%;
+    top: 20.5%;
     left: 35%;
     z-index: 2;
   }
   .card-logo {
     transform: scale(1);
     position: absolute;
-    top: 25.5%;
+    top: 23.5%;
     left: 42%;
     z-index: 3;
   }
@@ -248,7 +248,7 @@ input::placeholder {
     letter-spacing: 0.135rem;
     color: hsl(270, 3%, 87%);
     position: absolute;
-    top: 38%;
+    top: 36%;
     left: 42%;
     z-index: 4;
   }
@@ -257,7 +257,7 @@ input::placeholder {
     color: hsl(270, 3%, 87%);
     font-size: 0.9rem;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 42%;
     z-index: 4;
     text-transform: uppercase;
@@ -267,7 +267,7 @@ input::placeholder {
     color: hsl(270, 3%, 87%);
     font-size: 0.9rem;
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 110.5%;
     z-index: 4;
     text-transform: uppercase;
