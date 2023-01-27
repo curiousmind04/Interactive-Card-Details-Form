@@ -64,7 +64,9 @@ main {
 }
 
 #card-front-number {
-  letter-spacing: 0.135rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
   color: hsl(270, 3%, 87%);
   position: absolute;
   bottom: 15px;
@@ -245,7 +247,8 @@ input::placeholder {
   display: none;
 }
 
-.complete h1 {
+.complete h2 {
+  font-weight: 500;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-size: 1.7rem;
@@ -315,7 +318,7 @@ input::placeholder {
     height: 1.8rem;
     width: 85%;
     font-size: 1.8rem;
-    letter-spacing: 0.135rem;
+    letter-spacing: 0.165rem;
     color: hsl(270, 3%, 87%);
     position: absolute;
     top: 36%;

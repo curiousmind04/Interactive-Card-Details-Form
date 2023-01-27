@@ -45,7 +45,7 @@
               alt="card front"
             />
             <img src="images/card-logo.svg" class="card-logo" alt="card logo" />
-            <span id="card-front-number">0000 0000 0000 0000</span>
+            <h1 id="card-front-number">0000 0000 0000 0000</h1>
             <span class="card-front-name">Jane Appleseed</span>
             <span class="card-front-exp">
               <span class="card-front-mth">00</span><span>/</span
@@ -72,9 +72,7 @@
             <input
               type="number"
               id="card-number"
-              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              minlength="16"
-              maxlength="16"
+              oninput="if (this.value.length > 16) this.value = this.value.slice(0, 16);"
               placeholder="e.g. 1234 5678 9123 0000"
               required
             />
@@ -88,18 +86,14 @@
               type="number"
               id="exp-date-mth"
               placeholder="MM"
-              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              minlength="2"
-              maxlength="2"
+              oninput="if (this.value.length > 2) this.value = this.value.slice(0, 2);"
               required
             />
             <input
               type="number"
               id="exp-date-yr"
               placeholder="YY"
-              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              minlength="2"
-              maxlength="2"
+              oninput="if (this.value.length > 2) this.value = this.value.slice(0, 2);"
               required
             />
             <label for="cvc" class="cvc-label">CVC</label>
@@ -107,9 +101,7 @@
               type="number"
               id="cvc"
               placeholder="e.g. 123"
-              oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-              minlength="3"
-              maxlength="3"
+              oninput="if (this.value.length > 3) this.value = this.value.slice(0, 3);"
               required
             />
             <span class="exp-mth-error">Can't be blank</span>
@@ -120,7 +112,7 @@
         </form>
         <div class="complete">
           <img src="images/icon-complete.svg" alt="complete icon" />
-          <h1>Thank you!</h1>
+          <h2>Thank you!</h2>
           <p>We've added your card details</p>
           <button class="complete-button">Continue</button>
         </div>
