@@ -22,7 +22,7 @@ main {
   display: none;
 }
 
-.mobile-complete {
+.complete {
   display: none;
 }
 
@@ -67,7 +67,7 @@ main {
   z-index: 3;
 }
 
-.card-front-number {
+#card-front-number {
   letter-spacing: 0.135rem;
   color: hsl(270, 3%, 87%);
   position: absolute;
@@ -100,6 +100,10 @@ main {
 
 .right {
   padding: 0 1.5rem;
+}
+
+.form {
+  position: relative;
 }
 
 label {
@@ -189,7 +193,60 @@ input::placeholder {
   background: hsl(278, 66%, 25%);
 }
 
+.name-error {
+  font-size: 0.65rem;
+  color: hsl(0, 100%, 66%);
+  position: absolute;
+  top: 75px;
+  display: none;
+}
+
+.num-error {
+  font-size: 0.65rem;
+  color: hsl(0, 100%, 66%);
+  position: absolute;
+  top: 162px;
+  display: none;
+}
+
+.exp-mth-error {
+  font-size: 0.65rem;
+  color: hsl(0, 100%, 66%);
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  display: none;
+}
+
+.exp-yr-error {
+  font-size: 0.65rem;
+  color: hsl(0, 100%, 66%);
+  position: absolute;
+  bottom: 70px;
+  left: 83px;
+  display: none;
+}
+
+.cvc-error {
+  font-size: 0.65rem;
+  color: hsl(0, 100%, 66%);
+  position: absolute;
+  bottom: 70px;
+  left: 165px;
+  display: none;
+}
+
+.error {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
 @media (min-width: 78rem) {
+  .form {
+    display: none;
+  }
+  .complete {
+    display: block;
+  }
   main {
     display: flex;
     justify-content: space-between;
@@ -241,7 +298,7 @@ input::placeholder {
     left: 42%;
     z-index: 3;
   }
-  .card-front-number {
+  #card-front-number {
     height: 1.8rem;
     width: 85%;
     font-size: 1.8rem;
@@ -288,5 +345,28 @@ input::placeholder {
   .inputs-container {
     margin-top: 1.6rem;
     margin-bottom: 2.6rem;
+  }
+  .name-error {
+    font-size: 0.8rem;
+    top: 78px;
+  }
+  .num-error {
+    font-size: 0.8rem;
+    top: 174px;
+  }
+  .exp-mth-error {
+    font-size: 0.8rem;
+    bottom: 70px;
+    left: 0;
+  }
+  .exp-yr-error {
+    font-size: 0.8rem;
+    bottom: 70px;
+    left: 95px;
+  }
+  .cvc-error {
+    font-size: 0.8rem;
+    bottom: 70px;
+    left: 191px;
   }
 }
