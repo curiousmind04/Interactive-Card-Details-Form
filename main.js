@@ -16,6 +16,7 @@ const expYrError = document.querySelector(".exp-yr-error");
 const cvcError = document.querySelector(".cvc-error");
 const form = document.querySelector(".form");
 const complete = document.querySelector(".complete");
+const completeButton = document.querySelector(".complete-button");
 
 function format(s) {
   return s.toString().replace(/\d{4}(?=.)/g, "$& ");
@@ -130,4 +131,15 @@ formButton.addEventListener("click", (e) => {
     form.style.display = "none";
     complete.style.display = "block";
   }
+});
+
+completeButton.addEventListener("click", () => {
+  form.style.display = "block";
+  complete.style.display = "none";
+  cardName.innerHTML = "JANE APPLESEED";
+  cardNumber.innerHTML = "0000 0000 0000 0000";
+  cardMonth.innerHTML = "00";
+  cardYear.innerHTML = "00";
+  cardCvc.innerHTML = "000";
+  form.reset();
 });
